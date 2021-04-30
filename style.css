@@ -1,0 +1,329 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Assistant', sans-serif;
+
+}
+/*index*/
+
+.text-primary{
+	color: #c94c4c;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+   typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.main-container{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto auto;	
+}
+.navbar {
+	grid-column: 1/4;
+	grid-row: 1/2;
+	background-color: #c94c4c;
+	overflow: hidden;
+}
+.navbar a{
+	float: right;
+	color: #000000;
+	text-align: center;
+	padding: 13px 15px;
+	text-decoration: none;
+	font: 20px;
+}
+
+.navbar a:hover{
+	background-color: #f4e1d2;
+	color: #000000;
+	font-weight: bold;
+	border-bottom: solid #fff;
+}
+#banner {
+	background: url(c3.gif) no-repeat center center/cover ;
+	grid-column: 1/4;
+	grid-row: 2/3;
+	padding: 200px;
+	text-align: left;
+	color: #000000;
+}
+
+.banner h1 {
+	font-size: 30px;
+  }
+
+#banner h1{
+  color: #000000;
+  font-size-adjust: 70px;
+  line-height: 1.3;
+  display: inline-grid;
+  padding: 50px;
+  position: relative;
+  animation-name: heading;
+  animation-duration:3s;
+  animation-fill-mode: forwards;
+}
+@keyframes heading{
+  0%{
+      top: -100px;
+  }
+  100%{
+    top: 10px;
+
+ }  
+}
+
+
+/*#banner {
+	background: url(../img/c3.gif) no-repeat center center/cover ;
+	grid-column: 1/4;
+	grid-row: 2/3;
+	padding: 200px;
+	text-align: left;
+	color: #000000;
+}
+
+.banner h1 {
+	font-size: 30px;
+  }*/
+
+.container p {
+	font-size: 20px;
+	padding: 10px 12px;
+	margin: auto;
+
+}
+.container a{  
+	text-align: center;
+	padding: 13px 15px;
+	font: 12px;
+	color: #000000;
+}
+.button {
+  background-color: #e06377; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#about{
+	grid-column: 1/4;
+	grid-row: 3/4;
+	display: grid;
+	grid-template-columns: auto auto;
+	background-color:#f7786b;
+    padding: 210px;
+	
+}
+#about a{
+	text-decoration: none;
+}
+#about p{
+	float: left;
+	text-align: left;
+	font: 20px;
+
+}
+
+#about img {
+	align-items: center;
+}
+#about p{
+  float: right;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+  position: relative;
+  animation-name: content;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes content{
+  0%{
+    right: -400px;
+  }
+  100%{
+    right: 0;
+  }
+}
+#about h2{
+  float: right;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+  position: relative;
+  animation-name: content;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes content{
+  0%{
+    right: -400px;
+  }
+  100%{
+    right: 0;
+  }
+}
+#portfolio {
+  grid-column: 1/4;
+  grid-row: 5/6;
+  grid-template-columns: auto auto;
+  background-color: #eea29a  ;
+  padding: 210px;
+}
+
+#portfolio p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+   typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #c94c4c; }
+}
+
+
+
+
+
+#contact {
+  grid-column: 1/4;
+  grid-row: 7/8;
+  grid-template-columns: auto auto;
+  background-color: #f7cac9;
+  padding: 200px;
+}
+
+#contact h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 8rem;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 25px;
+  margin: 3rem 0;
+  margin-top: 5rem;
+
+}
+
+#contact .form-box {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 2px 2px 5px #d1d1d1;
+  border-radius:10px ;
+}
+
+#contact .form-group {
+  margin-bottom: 20px;
+}
+
+#contact .form-group label {
+  display: grid;
+  margin-bottom: 0.5rem;
+  width: 50%;
+  margin-left: 10%;
+  font-size: 1.1rem;
+}
+
+#contact .form-group input, 
+#contact .form-group textarea {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.3rem;
+  padding: 12px;
+  border: 0.5px solid #333;
+  border-radius: 5px;
+}
+
+#contact .form-group textarea{
+  font-family: 'Assistant', sans-serif;
+}
+
+#contact .contact-btn{
+   background-color: #e06377;
+   border: none;
+   color: white;
+   margin-left: 10%;
+   width: 50%;
+   padding: 14px 30px;
+   text-align: center;
+   display: inline-grid;
+   font-size: 20px;
+   margin-bottom: 2rem;
+   cursor: pointer;
+}
+
+#contact .form-container {
+  position: relative;
+}
+
+/*#container .mail-icon {
+  font-size: 4rem;
+  background: #000000;
+  color: white;
+  display: inline-grid;
+  padding: 1.5rem 2rem;
+  border-radius: 50%;
+  position: absolute;
+}*/
+
+.footer{
+	grid-column: 1/4;
+	grid-row: 9/10;
+	background-color: #c94c4c;
+	color: #fff;
+	padding: 31.5px;
+	width: 1200px;
+	margin: auto;
+
+}
+
+.footer p{
+	text-align: center;
+}
+
+
